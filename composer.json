@@ -1,0 +1,27 @@
+{
+    "name": "linroid/wechat",
+    "description": "微信开发框架",
+    "authors": [
+        {
+            "name": "linroid",
+            "email": "linroid@gmail.com",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/controllers",
+            "src/models",
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Linroid\\Wechat\\": "src/"
+        }
+    },
+
+    "minimum-stability": "stable"
+}
