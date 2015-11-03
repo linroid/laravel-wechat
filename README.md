@@ -1,10 +1,11 @@
 # laravel-wechat
 之前写的一个适用于Laravel的微信开发框架
 
-#Usage
+## Usage
 执行`php artisan wechat:init`命令后会创建`app/wechat.php`文件，用于注册处理请求的handlers。
 继承\Linroid\Wechat\WechatHandler,然后会有一些很方便的方法用来处理请求。
-#Sample
+
+## Sample
 
 ```php
 <?php
