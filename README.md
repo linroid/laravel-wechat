@@ -36,10 +36,8 @@ class SubscribeHandler extends WechatHandler {
         $user->save();
 
         $response = new TextResponse($msg);
-        $content = <<<CONTENT
-感谢您的关注
-CONTENT;
-        $response->setContent(sprintf($content, Config::get('wechat::nickname'), wechat_url($msg->user, 'red_pack')));
+        $content = "欢迎关注%s";
+        $response->setContent(sprintf($content, Config::get('wechat::nickname')));
 
         return $response;
     }
